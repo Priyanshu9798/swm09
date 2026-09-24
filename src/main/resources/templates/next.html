@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>next Page</title>
+	
+</head>
+<style>
+	
+h1{
+	color: rgb(255, 255, 0);
+}
+</style>
+<body>
+	<h1>next  page</h1>
+	
+	<hr>
+	
+	<table border="1" width="60%" align="center">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>College</th>
+				<th>Marks</th>
+			</tr>
+			<tr th:each="user:${users}">
+				<td th:text="${user.name}">User name</td>
+				<td th:text="${user.age}">User age</td>
+				<td th:text="${user.college}">User college</td>
+				<td th:text="${user.age}">User marks</td>
+			</tr>
+		</thead>
+		
+	</table>
+	<a href="/">Click here</a>
+	
+</body>	
+</html>
